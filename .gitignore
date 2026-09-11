@@ -1,0 +1,53 @@
+# ---------------------------------------------------------------------------
+# Go Binaries and Build Artifacts
+# ---------------------------------------------------------------------------
+# Compiled applications (OS-specific extensions)
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Core architecture/OS specific binaries
+bin/
+pkg/
+
+# ---------------------------------------------------------------------------
+# Testing and Coverage
+# ---------------------------------------------------------------------------
+# Test binaries built via `go test -c`
+*.test
+
+# Output of the Go coverage tool (e.g., go test -coverprofile=c.out)
+*.out
+*.prof
+
+# ---------------------------------------------------------------------------
+# Dependencies (Go Modules)
+# ---------------------------------------------------------------------------
+# Un-comment the line below if you explicitly vendoring your dependencies 
+# inside your project repo (not recommended for modern Go modules).
+# vendor/
+
+# ---------------------------------------------------------------------------
+# Development Tools and IDEs
+# ---------------------------------------------------------------------------
+# GoLand / IntelliJ IDEA
+.idea/
+/shelf/
+/workspace.xml
+/httpRequests/
+/dataSources/
+/dataSources.local.xml
+
+# Visual Studio Code
+.vscode/
+!.vscode/extensions.json
+
+# Local Environment Variables
+.env
+*.local
+
+# OS-specific clutter
+.DS_Store
+Thumbs.db
