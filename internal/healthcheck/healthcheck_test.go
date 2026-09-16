@@ -22,7 +22,7 @@ func TestHealthChecker(t *testing.T) {
 	}
 
 	client := &http.Client{Timeout: time.Millisecond * 500}
-	hc := HealthChecker{Client: client}
+	hc := NewHealthChecker(client)
 	for _, tt := range testCases {
 		t.Run(tt.Name, func(t *testing.T) {
 			srv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {

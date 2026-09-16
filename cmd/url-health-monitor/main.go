@@ -22,7 +22,7 @@ func main() {
 	client := &http.Client{
 		Timeout: time.Second * 5,
 	}
-	hc := healthcheck.HealthChecker{Client: client}
+	hc := healthcheck.NewHealthChecker(client)
 	hcResult := hc.Check(url)
 	if hcResult.Error != nil {
 		fmt.Printf("Url: %s\nError: %s\nDuration: %s\n", url, hcResult.Error, hcResult.Duration)
