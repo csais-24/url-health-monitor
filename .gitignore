@@ -51,3 +51,4 @@ pkg/
 # OS-specific clutter
 .DS_Store
 Thumbs.db
+url_list.txt
