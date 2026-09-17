@@ -16,7 +16,7 @@ func main() {
 	flag.StringVar(&url, "test-url", "", "Test URL")
 	flag.Parse()
 	if url == "" {
-		log.Fatal("Usage: go run cmd/healthcheck/main.go <https://example.com")
+		log.Fatal("Usage: go run cmd/healthcheck/main.go <https://example.com>")
 	}
 
 	client := &http.Client{
